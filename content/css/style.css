@@ -1,0 +1,146 @@
+/* For all */
+@import url('header.css');
+@import url('footer.css');
+
+@font-face {
+     font-family: 'irsans';
+     src: url('../font/IRAN-Sans.ttf');
+}
+
+@font-face {
+     font-family: 'adsans';
+     src: url('../font/AdelleSans.otf');
+}
+
+@font-face {
+     font-family: 'yekanb';
+     src: url('../font/BYekan+.ttf');
+}
+
+@font-face {
+     font-family: 'yekan';
+     src: url('../font/BYekan+Bold.ttf');
+}
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'irsans';
+}
+
+:root {
+     --color-silver: #b0b0b0;
+     --color-black: #1c1c1c;
+     --color-orange: #f39c12;
+     --color-bright-yellow: #f1c40f;
+     --color-neon-green: #39dd14;
+
+     --color-red: #e63946;
+     --color-white: #fff;
+     --color-green: #28a745;
+
+     --color-dark-purple: #8e44ad;
+     --color-dark-blue: #0a3d62;
+     --color-dark-gray: #343a40;
+     --color-dark-gray2: #2f2f2f;
+}
+
+/* ------------------------- Start dark ------------------------- */
+body.dark {
+     background-color: var(--color-dark-gray2);
+}
+
+main.dark  {
+     color: #fff ;
+}
+
+main.dark .section-title::after,
+main.dark .section-title::before{
+     background-color: #fff;
+}
+
+main.dark i  {
+     color: #fff;
+}
+/* ------------------------- End dark ------------------------- */
+
+body {
+     background-color: #b0b0b081;
+     overflow-x: hidden;
+}
+
+.container {
+     max-width: 1400px;
+     width: 90%;
+     margin: auto;
+}
+
+.flex {
+     display: flex;
+}
+
+.align-center {
+     align-items: center;
+}
+
+.justify-center {
+     justify-content: center;
+}
+
+.def-radius {
+     border-radius: 15px;
+}
+
+/* ------------------------ Section Title ------------------------ */
+.section-title {
+     text-align: center;
+     margin-top: 4rem;
+     position: relative;
+}
+
+.section-title::after {
+     top: 60%;
+     left: 15%;
+}
+
+.section-title::before {
+     top: 50%;
+     right: 15%;
+}
+
+.section-title::after,
+.section-title::before {
+     content: '';
+     border-radius: 10px;
+     width: 17%;
+     height: 0.15rem;
+     background-color: #000;
+     position: absolute;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+     .section-title::after,
+     .section-title::before {
+          width: 10%;
+     }
+}
+
+@media screen and (max-width: 768px) {
+
+     .section-title::after {
+          left: 3%;
+     }
+
+     .section-title::before {
+          right: 3%;
+     }
+
+     .section-title::after,
+     .section-title::before {
+          width: 10%;
+     }
+}

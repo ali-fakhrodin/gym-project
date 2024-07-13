@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="دریافت آنلاین برنامه غذایی و بدنسازی به همراه پشتیبانی رایگان">
+     <meta name="keywords" content="برنامه تمرینی، برناهه ورزشی، برنامه غذایی، برنامه بدنسازی">
+     <meta name="author" content="Fakhro">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Gym plan</title>
+     <link rel="stylesheet" href="content/css/home.css">
+     <link rel="stylesheet" href="content/css/all.css">
+</head>
+
+<body dir="rtl">
+
+     <!------------------------------------ Start Toggle ------------------------------------>
+     <div class="home-toggles flex align-center def-radius hide">
+
+          <span class="toggle-x-i" style="color: #e40000;left: 1.5rem; top: 1rem; position: absolute;">
+               <i class="fa-solid fa-x fa-2xl"></i>
+          </span>
+
+          <div class="diet-toggle hide">
+               <form action="" class="diet-toggle flex align-center">
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <label for="name">نام و نام خانوادگی</label>
+                         <input type="text" name="name" id="name" placeholder="بنویس ..." required>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <label for="call-number">شماره تماس</label>
+                         <input type="tel" name="call-number" id="call-number" placeholder="بنویس ..." required>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <p>برای چی رژیم می خوای؟</p>
+                         <div class="radio-box">
+                              <label for="diet-type-01">لاغری</label>
+                              <input type="radio" name="diet-type" id="diet-type-01" required>
+                              <label for="diet-type-02">حجم</label>
+                              <input type="radio" name="diet-type" id="diet-type-02" required>
+                              <label for="diet-type-03">خشک</label>
+                              <input type="radio" name="diet-type" id="diet-type-03" required>
+                              <label for="diet-type-04">فقط برای سلامتی</label>
+                              <input type="radio" name="diet-type" id="diet-type-04" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <div class="radio-box">
+                              <p>تو چه سطحی باشه؟</p>
+                              <label for="level-01">ساده</label>
+                              <input type="radio" name="level" id="level-01" required>
+                              <label for="level-02">متوسط</label>
+                              <input type="radio" name="level" id="level-02" required>
+                              <label for="level-03">سخت</label>
+                              <input type="radio" name="level" id="level-03" required>
+                              <label for="level-04">بدنسازی حرفه ای</label>
+                              <input type="radio" name="level" id="level-04" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <div class="radio-box">
+                              <p>چقدر می تونی برای خوراکت هزینه کنی؟</p>
+                              <label for="finan-pow-01">زیر 1 میلیون</label>
+                              <input type="radio" name="financial-power" id="finan-pow-01" required>
+                              <label for="finan-pow-02">زیر 5 میلیون</label>
+                              <input type="radio" name="financial-power" id="finan-pow-02" required>
+                              <label for="finan-pow-03">زیر 10 میلیون</label>
+                              <input type="radio" name="financial-power" id="finan-pow-03" required>
+                              <label for="finan-pow-04">بالای 10 میلیون</label>
+                              <input type="radio" name="financial-power" id="finan-pow-04" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <input type="submit" name="toggle-submit" id="diet-submit-btn" value="تایید">
+                    </div>
+               </form>
+          </div>
+
+          <div class="exersise-toggle hide">
+               <form action="" class="diet-toggle flex align-center">
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <label for="name">نام و نام خانوادگی</label>
+                         <input type="text" name="name" id="name" placeholder="بنویس ..." required>
+                    </div>
+     
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <label for="call-number">شماره تماس</label>
+                         <input type="tel" name="call-number" id="call-number" placeholder="بنویس ..." required>
+                    </div>
+     
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <p>جنسیتت رو بگو</p>
+                         <div class="radio-box">
+                              <label for="gender-01">آقا</label>
+                              <input type="radio" name="gender-type" id="gender-01" required>
+                              <label for="gender-02">خانم</label>
+                              <input type="radio" name="gender-type" id="gender-02" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <p>برای چی برنامه می خوای؟</p>
+                         <div class="radio-box">
+                              <label for="exersise-type-01">لاغری</label>
+                              <input type="radio" name="exersise-type" id="exersise-type-01" required>
+                              <label for="exersise-type-02">حجم</label>
+                              <input type="radio" name="exersise-type" id="exersise-type-02" required>
+                              <label for="exersise-type-03">خشک</label>
+                              <input type="radio" name="exersise-type" id="exersise-type-03" required>
+                              <label for="exersise-type-04">فقط برای سلامتی</label>
+                              <input type="radio" name="exersise-type" id="exersise-type-04" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <div class="radio-box">
+                              <p>تو چه سطحی باشه؟</p>
+                              <label for="ex-level-01">ساده</label>
+                              <input type="radio" name="ex-level" id="ex-level-01" required>
+                              <label for="ex-level-02">متوسط</label>
+                              <input type="radio" name="ex-level" id="ex-level-02" required>
+                              <label for="ex-level-03">سخت</label>
+                              <input type="radio" name="ex-level" id="ex-level-03" required>
+                              <label for="ex-level-04">بدنسازی حرفه ای</label>
+                              <input type="radio" name="ex-level" id="ex-level-04" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <div class="radio-box">
+                              <p>کجا تمرین می کنی؟</p>
+                              <label for="ex-work-01">باشگاه</label>
+                              <input type="radio" name="ex-work" id="ex-work-01" required>
+                              <label for="ex-work-02">خونه</label>
+                              <input type="radio" name="ex-work" id="ex-work-02" required>
+                         </div>
+                    </div>
+
+                    <div class="toggle-inp-box flex align-center justify-center">
+                         <input type="submit" name="toggle-submit" id="diet-submit-btn" value="تایید">
+                    </div>
+               </form>
+          </div>
+     </div>
+     <!------------------------------------ End Toggle ------------------------------------>
+
+
+     <!------------------------------------ Start Header ------------------------------------>
+     <header class="def-radius flex align-center">
+          <div class="container">
+               <div class="header-container">
+
+                    <div class="logo-box def-radius">
+                         <img src="content/img/logo/logo.jpg" alt="logo">
+                    </div>
+
+                    <nav class="header-menu-nav" style="width: max-content; margin: auto;">
+                         <ul class="header-list flex align-center">
+                              <li>
+                                   <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                                   <a href="index.html"
+                                        onclick="closeHeaderMenu()">خانه</a>
+                              </li>
+                              <li>
+                                   <i class="fa-solid fa-leaf fa-xl" style="color: #ffffff;"></i>
+                                   <a href="home.html#diet-box"
+                                        onclick="closeHeaderMenu()">رژیم غذایی</a>
+                              </li>
+                              <li>
+                                   <i class="fa-solid fa-dumbbell fa-xl" style="color: #ffffff;"></i>
+                                   <a href="home.html#exersise-box"
+                                        onclick="closeHeaderMenu()">برنامه تمرینی</a>
+                              </li>
+                              <li>
+                                   <i class="fa-solid fa-handshake fa-xl" style="color: #ffffff;"></i>
+                                   <a href="counseling.html"
+                                        onclick="closeHeaderMenu()">مشاوره رایگان</a>
+                              </li>
+                         </ul>
+                    </nav>
+
+                    <div class="header-left">
+                         <a href="tel:09053204673">
+                              <button class="call-btn def-radius">
+                                   <i class="fa-solid fa-phone-volume fa-xl"
+                                        style="color: #ffffff;padding-left: 5px;"></i>
+                                   تماس با ما
+                              </button>
+                         </a>
+                         <span class="header-bar-i">
+                              <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                         </span>
+                    </div>
+               </div>
+          </div>
+          <span class="moon-i">
+               <i class="fa-solid fa-moon fa-2xl" style="color: #ffffff; padding-left: 1.5rem;"></i>
+          </span>
+     </header>
+     <!------------------------------------ End Header ------------------------------------>
+
+     <!------------------------------------ Start Main ------------------------------------>
+     <main>
+          <div class="container">
+
+               <section class="section-top def-radius flex align-center justify-center">
+                    <h1 class="def-radius">دریافت آنلاین برنامه غذایی و بدنسازی + پشتیبانی رایگان</h1>
+                    <h2 class="def-radius">هیچکس قهرمان به دنیا نمیاد</h2>
+                    <h3 style="margin-top: 2rem;">با کمک مربی های پیشکسوت ما، بدن رویاییت رو بساز 💪 (تضمینی)</h3>
+               </section>
+
+               <img src="content/img/fx/01.png" alt="fx" style="position: absolute; left: 0;" class="img-fx-01">
+
+               <h2 class="section-title"
+                    style="width: 100%; text-align: center; display: inline-block; margin-top: 4.2rem;"><i
+                         class="fa-regular fa-newspaper fa-xl"></i> توضیحات کوتاه
+               </h2>
+
+               <img src="content/img/fx/01.png" alt="fx"
+                    style="transform: rotate(180deg) ;position: absolute; right: 0;" class="img-fx-01">
+
+               <section class="section-center def-radius">
+                    <div class="section-center-txt">
+
+                         <h2 class="section-txt-title"><i class="fa-solid fa-circle-dot" style="color: #000000;"></i> از
+                              کجا شروع کنم؟</h2>
+                         <br>
+                         <p> قدم اول شروع تناسب اندام، دریافت برنامه ای جامع و کامل از یک مربی با تجربست.
+                              <br>
+                              برای گرفتن بهترین نتیحه تو زمان دلخواه، یک برنامه غذایی مناسب باید داشته باشی و با
+                              رعایت
+                              کردن
+                              رژیم غذاییت، سلامتی، زیبایی و همچنین طول عمر بیشتری خواهی داشت.
+                              <br>
+                         <p>
+                              در کنار برنامه غذایی، برنامه تمرینی هم نقش موثر و مفیدی داره و این موضوع شدیداً اهمیت
+                              داره
+                              که از چه کسی برنامه تهیه می کنی و آیا برنامه ای که برات نوشته میشه، اختصاصیه یا کپی
+                              شده!
+                         </p>
+                         </p>
+
+                         <h2 class="section-txt-title"><i class="fa-solid fa-circle-dot" style="color: #000000;"></i> چه
+                              کمکی می تونم بهت بکنم؟
+                         </h2>
+                         <br>
+                         <p>
+                              توی مشاوره گرفتن، روی من و تیممون می تونی حساب کنی. چرا؟
+                              <br>
+                              استاد هایی که داریم با تجربه هستن و هرکدوم به اختصاص روی یک یا دو بخشی تمرکز می کنن،
+                              مثلا
+                              فقط
+                              روی حجم یا فقط رژیم غذایی.
+                              <br>
+                              برای رژیم یا برنامه تمرینی، از خدماتمون می تونی استفاده کنی و حتی با پشتیبانی سایت
+                              می تونی در ارتباط باشی
+                         </p>
+
+                         <h2 class="section-txt-title"><i class="fa-solid fa-circle-dot" style="color: #000000;"></i> چه
+                              کمکی می تونم بهت بکنم؟
+                         </h2>
+                         <br>
+                         <p>
+                              توی مشاوره گرفتن، روی من و تیممون می تونی حساب کنی. چرا؟
+                              <br>
+                              استاد هایی که داریم با تجربه هستن و هرکدوم به اختصاص روی یک یا دو بخشی تمرکز می کنن،
+                              مثلا
+                              فقط
+                              روی حجم یا فقط رژیم غذایی.
+                              <br>
+                              برای رژیم یا برنامه تمرینی، از خدماتمون می تونی استفاده کنی و حتی با پشتیبانی سایت
+                              می تونی در ارتباط باشی
+                         </p>
+                    </div>
+               </section>
+
+               <h2 class="section-title">همین حالا شروع کن</h2>
+               <section class="section-service def-radius">
+
+                    <div class="service-box flex align-center">
+                         <div class="service-right">
+                              <span class="servise-txt">دریافت رژیم غذایی</span>
+                              <div class="service diet-box def-radius flex align-center justify-center" id="diet-box">
+                              </div>
+                         </div>
+                         <div class="service-left">
+                              <span class="servise-txt">دریافت برنامه تمرینی</span>
+                              <div class="service exersise-box def-radius flex align-center justify-center"
+                                   id="exersise-box">
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
+               <h2 class="section-title">مربیان پرورش اندام</h2>
+               <section class="section-master">
+                    <div class="master master1 flex align-center">
+
+                         <div class="info">
+                              <h3>امین طائفه</h3>
+                              <data>سابقه 10 سال مربیگری حرفه ای در رشته بادی بیولدینگ و مدیریت باشگاه نیوتن</data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(1).jpg" alt="master1">
+                         </div>
+
+                    </div>
+
+                    <div class="master master2 flex align-center">
+
+                         <div class="info">
+                              <h3>بهراد طائفه</h3>
+                              <data>دارای مدرک رسمی فدراسیون بدنسازی و دو قهرمانی کشور</data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(2).jpg" alt="master1">
+                         </div>
+
+                    </div>
+
+                    <div class="master master3 flex align-center">
+
+                         <div class="info">
+                              <h3>هادی چوپان</h3>
+                              <data>قهرمان مستر المپای 2023 و قهرمان کلاسیک 2024 انگلیس </data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(3).jpg" alt="master1">
+                         </div>
+
+                    </div>
+
+                    <div class="master master1 flex align-center">
+
+                         <div class="info">
+                              <h3>امین طائفه</h3>
+                              <data>سابقه 10 سال مربیگری حرفه ای در رشته بادی بیولدینگ و مدیریت باشگاه نیوتن</data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(1).jpg" alt="master1">
+                         </div>
+
+                    </div>
+
+                    <div class="master master2 flex align-center">
+
+                         <div class="info">
+                              <h3>بهراد طائفه</h3>
+                              <data>دارای مدرک رسمی فدراسیون بدنسازی و دو قهرمانی کشور</data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(2).jpg" alt="master1">
+                         </div>
+
+                    </div>
+
+                    <div class="master master3 flex align-center">
+
+                         <div class="info">
+                              <h3>هادی چوپان</h3>
+                              <data>قهرمان مستر المپای 2023 و قهرمان کلاسیک 2024 انگلیس </data>
+                         </div>
+
+                         <div class="master-img flex align-center justify-center">
+                              <img src="content/img/man(3).jpg" alt="master1">
+                         </div>
+
+                    </div>
+               </section>
+
+               <br><br>
+          </div>
+     </main>
+     <!------------------------------------ End Main ------------------------------------>
+
+     <!------------------------------------ Start Footer ------------------------------------>
+     <footer>
+          <div class="container">
+
+               <div class="footer-container">
+                    <div class="footer_right">
+                         <h4 class="footer-right-title">شبکه های اجتماعی</h4>
+                         <div class="social flex align-center justify-center">
+                              <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                              <a href="#"><i class="fa-brands fa-telegram fa-xl" style="color: #ffffff;"></i></a>
+                              <a href="#"><i class="fa-solid fa-mobile-screen fa-xl" style="color: #ffffff;"></i></a>
+                              <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i></a>
+                         </div>
+                         <div class="footer-right-contact" style="margin-top: 1rem;">
+                              <a href="tel:09053204673">
+                                   <button class="call-btn def-radius" style="margin: 0;">
+                                        <i class="fa-solid fa-phone-volume fa-xl"
+                                             style="color: #ffffff;padding-left: 5px;"></i>
+                                        تماس با ما
+                                   </button>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="footer_left">
+                         <form action="">
+                              <h4>برای اطلاع از برنامه ها و جشنواره ها عضو شید</h4>
+                              <input type="email" name="email" id="footer-email-inp" placeholder="example@gmail.com">
+                              <input type="submit" id="footer-email-submit-btn" value="تایید">
+                         </form>
+                    </div>
+
+                    <div class="footer_bottom">
+                         <h4>طراحی شده توسط</h4>
+                         <data>Fakhi team</data> <i class="fa-regular fa-copyright fa-xl" style="color: #ffffff;"></i>
+                    </div>
+               </div>
+
+          </div>
+     </footer>
+     <!------------------------------------ End Footer ------------------------------------>
+
+     <script src="content/js/app.js" type="module"></script>
+     <script src="content/js/home.js" type="module"></script>
+</body>
+
+</html>
