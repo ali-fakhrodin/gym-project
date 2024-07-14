@@ -194,14 +194,41 @@ body::before {
 
      /* section top */
      .section-top h1 {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
+          z-index: 1;
      }
 
      .section-top h2,
      h3 {
-          font-size: medium;
+          font-size: smaller;
+          padding: 0 1.5rem;
+          z-index: 1;
+          margin-top: 2rem;
      }
 
+     .section-top {
+          height: 25rem;
+          background-position-y: 90%;
+          background-position-x: 90%;
+     }
+
+     .section-top {
+          height: 25rem;
+          background-position-y: 90%;
+          background-position-x: 90%;
+          position: relative;
+          overflow: hidden;
+     }
+     .section-top::before {
+          content: '';
+          z-index: 0;
+          position: absolute;
+          background-color: #000;
+          width: 100%;
+          height: 100%;
+          filter: opacity(0.3);
+     }
+     
      .section-title::after {
           left: 3%;
      }
