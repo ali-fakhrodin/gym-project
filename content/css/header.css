@@ -2,6 +2,7 @@
 main.dark .master:hover {
      background-color: var(--color-black);
 }
+
 /* --------------------------- End dark --------------------------- */
 
 header {
@@ -95,6 +96,7 @@ header.hide-header {
 .moon-i i {
      transition: all ease 400ms;
 }
+
 .moon-i i:hover {
      color: #000 !important;
      transform: translateX(-5px);
@@ -144,7 +146,7 @@ header.hide-header {
      .header-list {
           flex-direction: column;
      }
-     
+
      .header-list li {
           padding: 1rem 2rem;
      }
@@ -159,6 +161,7 @@ header.hide-header {
           top: 2rem;
           left: 4rem;
      }
+
      .header-menu-nav.mini-menu {
           opacity: 1;
           visibility: visible;
@@ -176,13 +179,36 @@ header.hide-header {
      }
 
 }
+
 @media screen and (max-width:768px) {
+     header {
+          top: 0;
+          padding: 1.2rem 0;
+          width: 100%;
+          border-radius: 0 !important;
+     }
+
+     .logo-box {
+          width: 3rem;
+          height: 3rem;
+     }
+
+     .call-btn {
+          width: 8rem;
+          padding: 0.5rem 0;
+     }
+
      .moon-i i {
           padding-left: 1rem;
+          font-size: 1.7rem;
+     }
+
+     .header-bar-i {
+          font-size: 0.9rem;
      }
 
      .header-left {
-          gap: 1rem;
+          gap: 2rem;
      }
 
      header .container {
