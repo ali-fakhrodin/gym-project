@@ -214,6 +214,7 @@ body::before {
 
      .section-top {
           height: 25rem;
+          margin-top: 6.5rem;
           background-position-y: 90%;
           background-position-x: 90%;
           position: relative;
