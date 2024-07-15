@@ -272,6 +272,8 @@ body::before {
      }
 
      .section-center {
+          width: 95%;
+          margin: 2.5rem auto;
           padding: 1rem 1.5rem;
      }
 
