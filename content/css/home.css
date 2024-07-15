@@ -192,12 +192,21 @@ body::before {
 
 @media screen and (max-width: 768px) {
 
+     main .container {
+          width: 95%;
+     }
      /* section top */
-     .section-top h1 {
-          font-size: 1.4rem;
-          z-index: 1;
+
+     .img-fx {
+          content: url('../img/fx/02.png');
      }
 
+     .section-top h1 {
+          font-size: 1.6rem;
+          z-index: 1;
+          line-height: 38px;
+     }
+     
      .section-top h2,
      h3 {
           font-size: smaller;
@@ -205,21 +214,23 @@ body::before {
           z-index: 1;
           margin-top: 2rem;
      }
-
+     
      .section-top {
-          height: 25rem;
+          height: 30rem;
+          border-radius: 14px 0 !important;
           background-position-y: 90%;
           background-position-x: 90%;
      }
-
+     
      .section-top {
-          height: 25rem;
+          height: 30rem;
           margin-top: 6.5rem;
           background-position-y: 90%;
           background-position-x: 90%;
           position: relative;
           overflow: hidden;
      }
+
      .section-top::before {
           content: '';
           z-index: 0;
@@ -258,5 +269,13 @@ body::before {
      .service-left,
      .service-right {
           width: 100%;
+     }
+
+     .section-center {
+          padding: 1rem 1.5rem;
+     }
+
+     .section-txt-title, .section-txt-p {
+          font-size: medium;
      }
 }
