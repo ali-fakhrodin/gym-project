@@ -10,6 +10,7 @@
      <title>Gym plan</title>
      <link rel="stylesheet" href="content/css/home.css">
      <link rel="stylesheet" href="content/css/all.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body dir="rtl">
@@ -87,12 +88,12 @@
                          <label for="name">نام و نام خانوادگی</label>
                          <input type="text" name="name" id="name" placeholder="بنویس ..." required>
                     </div>
-     
+
                     <div class="toggle-inp-box flex align-center justify-center">
                          <label for="call-number">شماره تماس</label>
                          <input type="tel" name="call-number" id="call-number" placeholder="بنویس ..." required>
                     </div>
-     
+
                     <div class="toggle-inp-box flex align-center justify-center">
                          <p>جنسیتت رو بگو</p>
                          <div class="radio-box">
@@ -163,23 +164,19 @@
                          <ul class="header-list flex align-center">
                               <li>
                                    <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
-                                   <a href="index.html"
-                                        onclick="closeHeaderMenu()">خانه</a>
+                                   <a href="index.html" onclick="closeHeaderMenu()">خانه</a>
                               </li>
                               <li>
                                    <i class="fa-solid fa-leaf fa-xl" style="color: #ffffff;"></i>
-                                   <a href="index.html#diet-box"
-                                        onclick="closeHeaderMenu()">رژیم غذایی</a>
+                                   <a href="index.html#diet-box" onclick="closeHeaderMenu()">رژیم غذایی</a>
                               </li>
                               <li>
                                    <i class="fa-solid fa-dumbbell fa-xl" style="color: #ffffff;"></i>
-                                   <a href="index.html#exersise-box"
-                                        onclick="closeHeaderMenu()">برنامه تمرینی</a>
+                                   <a href="index.html#exersise-box" onclick="closeHeaderMenu()">برنامه تمرینی</a>
                               </li>
                               <li>
                                    <i class="fa-solid fa-handshake fa-xl" style="color: #ffffff;"></i>
-                                   <a href="counseling.html"
-                                        onclick="closeHeaderMenu()">مشاوره رایگان</a>
+                                   <a href="counseling.html" onclick="closeHeaderMenu()">مشاوره رایگان</a>
                               </li>
                          </ul>
                     </nav>
@@ -230,7 +227,8 @@
                          <h2 class="section-txt-title"><i class="fa-solid fa-circle-dot" style="color: #000000;"></i> از
                               کجا شروع کنم؟</h2>
                          <br>
-                         <p class="section-txt-p"> قدم اول شروع تناسب اندام، دریافت برنامه ای جامع و کامل از یک مربی با تجربست.
+                         <p class="section-txt-p"> قدم اول شروع تناسب اندام، دریافت برنامه ای جامع و کامل از یک مربی با
+                              تجربست.
                               <br>
                               برای گرفتن بهترین نتیحه تو زمان دلخواه، یک برنامه غذایی مناسب باید داشته باشی و با
                               رعایت
@@ -283,12 +281,13 @@
                <section class="section-service def-radius">
 
                     <div class="service-box flex align-center">
-                         <div class="service-right">
+                         <div class="service-right wow animate__animated animate__zoomInDown">
                               <span class="servise-txt">دریافت رژیم غذایی</span>
                               <div class="service diet-box def-radius flex align-center justify-center" id="diet-box">
                               </div>
                          </div>
-                         <div class="service-left">
+
+                         <div class="service-left wow animate__animated animate__zoomInDown">
                               <span class="servise-txt">دریافت برنامه تمرینی</span>
                               <div class="service exersise-box def-radius flex align-center justify-center"
                                    id="exersise-box">
@@ -427,6 +426,11 @@
 
      <script src="content/js/app.js" type="module"></script>
      <script src="content/js/home.js" type="module"></script>
+
+     <script src="content/js/wow.min.js"></script>
+     <script>
+          new WOW().init();
+     </script>
 </body>
 
 </html>
