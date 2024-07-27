@@ -52,14 +52,18 @@ body::before {
      text-shadow: 3px 1px 4px #00000060;
      padding: 0 2rem 1rem 2rem;
 }
+
 /* ---------- Start typewriter ---------- */
 .Typewriter__wrapper mark {
      font-size: 2.2rem !important;
 }
+
 .Typewriter__wrapper {
      font-family: 'DIMA-YEKAN';
      font-size: 3.2rem;
 }
+
+/* ---------- End typewriter ---------- */
 
 /* section-center */
 .section-center {
@@ -230,6 +234,19 @@ body::before {
           line-height: 38px;
      }
 
+     /* Start type-writer */
+     .Typewriter__wrapper mark {
+          font-size: 1.5rem !important;
+     }
+     
+     .Typewriter__wrapper {
+          font-family: 'DIMA-YEKAN';
+          font-size: 2.2rem;
+          line-height: 3rem;
+     }
+
+     /* End type-writer */
+
      mark {
           font-size: 1.2rem !important;
 
@@ -295,6 +312,6 @@ body::before {
 
 @media screen and (max-width: 520px) {
      .section-top {
-          background-position-x: 75%
+          background-position-x: 60%
      }
 }
