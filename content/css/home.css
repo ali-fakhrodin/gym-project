@@ -93,14 +93,15 @@ body::before {
      text-decoration: solid underline red;
      color: #fff;
      font-family: 'DIMA-YEKAN';
-     font-size: 2rem;
+     font-size: 2.2rem;
      position: absolute;
      text-align: center;
 
      z-index: 5;
      top: calc(50% + 18px);
-     left: 25%;
-     right: 25%;
+     top: 50%;
+     left: 15%;
+     right: 15%;
 }
 
 /* main box */
@@ -281,5 +282,11 @@ body::before {
      .section-txt-title,
      .section-txt-p {
           font-size: medium;
+     }
+}
+
+@media screen and (max-width: 520px) {
+     .section-top {
+          background-position-x: 75%
      }
 }
