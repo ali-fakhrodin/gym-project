@@ -6,7 +6,10 @@
 
 <h2> 🌐 An image of Website home page</h2>
 
-<h3>02-Dark mode</h3>
+<br>
+
+<h3>02-Light mode</h3>
+
 ![website-pic1](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(1).jpg)
 
 <h3>02-Dark mode</h3>
