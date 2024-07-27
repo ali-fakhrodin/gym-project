@@ -4,10 +4,15 @@
 - Get a `meal plan`
 - Get the `training program`
 
-<h3> 🌐 An image of Website home page</h3>
+<h2> 🌐 An image of Website home page</h2>
 
+<h3>02-Dark mode</h3>
 ![website-pic1](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(1).jpg)
 
+<h3>02-Dark mode</h3>
+
 ![website-pic2](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(2).jpg)
+
+<h3>03-Counseling page</h3>
 
 ![website-pic3](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(3).jpg)
