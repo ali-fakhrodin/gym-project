@@ -5,7 +5,7 @@ const barIcon = $.querySelector('.header-bar-i')
 const moonIcon = $.querySelector('.moon-i')
 const bodyElem = $.querySelector('body')
 const mainElem = $.querySelector('main')
-const topFXImg = $.querySelectorAll('.img-fx-01')
+const topFXImg = $.querySelectorAll('.img-fx')
 
 let isDark = localStorage.getItem('isDark')
 
