@@ -7,5 +7,7 @@
 <h3> 🌐 An image of Website home page</h3>
 
 ![website-pic1]([https://github.com/ali-fakhrodin/gym-project/blob/main/02-gym.png](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(1).jpg))
+
 ![website-pic2]([https://github.com/ali-fakhrodin/gym-project/blob/main/02-gym.png](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(2).jpg))
+
 ![website-pic3]([https://github.com/ali-fakhrodin/gym-project/blob/main/02-gym.png](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(3).jpg))
