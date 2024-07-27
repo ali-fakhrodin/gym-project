@@ -6,15 +6,13 @@
 
 <h2> 🌐 An image of Website home page</h2>
 
-<br>
+<h3>01-Light mode</h3>
 
-<h3>02-Light mode</h3>
-
-![website-pic1](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(1).jpg)
+![website-pic1](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(1).jpg) <br>
 
 <h3>02-Dark mode</h3>
 
-![website-pic2](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(2).jpg)
+![website-pic2](https://github.com/ali-fakhrodin/gym-project/blob/main/gym-img(2).jpg) <br>
 
 <h3>03-Counseling page</h3>
 
