@@ -22,6 +22,11 @@
      src: url('../font/BYekan+Bold.ttf');
 }
 
+@font-face {
+     font-family: 'DIMA-YEKAN';
+     src: url('../font/DIMA-YEKAN-TYPOGRAPHY.TTF');
+}
+
 * {
      padding: 0;
      margin: 0;

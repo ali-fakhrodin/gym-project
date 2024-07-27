@@ -65,9 +65,9 @@ barIcon.onclick = () => {
 window.addEventListener('scroll', () => {
      // console.log('scrollY', (window.scrollY));
      // console.log('offsetH', ($.body.offsetHeight));
-     // console.log('innerH', (window.innerHeight - 144));
+     // console.log('innerH', (window.innerHeight));
 
-     const windowIn = window.innerHeight - 144
+     const windowIn = window.innerHeight
      const newScrollHgt = window.scrollY / ($.body.offsetHeight - windowIn) * 100
 
      $.body.style.setProperty('--before-height', `${newScrollHgt}%`)
